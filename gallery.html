@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animal Gallery | Johannesburg SPCA</title>
+
+    <meta name="description" content="Explore our animal welfare photo gallery featuring dogs, cats and other animals.">
+
+    <meta name="keywords" content="Johannesburg SPCA gallery, animal photographs, dogs, cats, animal welfare">
+
+    <meta name="author" content="Promedi Ilunga">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website navigation -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true">J</span>
+            <span>Johannesburg <strong>SPCA</strong></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mainNavigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="mainNavigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="adoption.html">Adoption</a>
+            <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+            <a href="enquiry.html">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Gallery introduction -->
+        <section class="page-banner">
+
+            <p class="section-label">A world of compassion</p>
+
+            <h1>Our Animal Gallery</h1>
+
+            <p>
+                Every photograph tells a story.
+                Explore the beauty, personality and joy of animals.
+            </p>
+
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">Moments worth celebrating</p>
+
+                <h2>Beautiful Animals, Beautiful Stories</h2>
+
+                <p>
+                    Click on any photograph to view it in a larger format.
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-item" type="button"
+                        data-index="0"
+                        aria-label="View photograph of a happy dog">
+
+                    <img
+                        src="images/dog-happy.jpg"
+                        alt="A happy dog looking at the camera"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Happy Companions</span>
+
+                </button>
+
+
+                <button class="gallery-item" type="button"
+                        data-index="1"
+                        aria-label="View photograph of a cat">
+
+                    <img
+                        src="images/cat-sitting.jpg"
+                        alt="A beautiful cat sitting comfortably"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Curious Cats</span>
+
+                </button>
+
+
+                <button class="gallery-item" type="button"
+                        data-index="2"
+                        aria-label="View photograph of a golden retriever">
+
+                    <img
+                        src="images/golden-retriever.jpg"
+                        alt="A golden retriever enjoying the outdoors"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Loyal Friends</span>
+
+                </button>
+
+
+                <button class="gallery-item" type="button"
+                        data-index="3"
+                        aria-label="View photograph of a playful puppy">
+
+                    <img
+                        src="images/dog-portrait.jpg"
+                        alt="A playful dog posing for a photograph"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Playful Personalities</span>
+
+                </button>
+
+
+                <button class="gallery-item" type="button"
+                        data-index="4"
+                        aria-label="View photograph of a rabbit">
+
+                    <img
+                        src="images/rabbit.jpg"
+                        alt="A rabbit sitting in a natural environment"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Little Friends</span>
+
+                </button>
+
+
+                <button class="gallery-item" type="button"
+                        data-index="5"
+                        aria-label="View photograph of another cat">
+
+                    <img
+                        src="images/cat-portrait.jpg"
+                        alt="A cat looking directly at the camera"
+                        loading="lazy"
+                        decoding="async">
+
+                    <span class="gallery-caption">Feline Friends</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Lightbox viewer -->
+        <div class="lightbox" id="lightbox"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="lightboxCaption"
+             hidden>
+
+            <button class="lightbox-close"
+                    id="lightboxClose"
+                    type="button"
+                    aria-label="Close image viewer">
+                &times;
+            </button>
+
+            <button class="lightbox-nav lightbox-prev"
+                    id="lightboxPrev"
+                    type="button"
+                    aria-label="Previous image">
+                &#10094;
+            </button>
+
+            <figure class="lightbox-figure">
+
+                <img id="lightboxImage" src="" alt="">
+
+                <figcaption id="lightboxCaption"></figcaption>
+
+            </figure>
+
+            <button class="lightbox-nav lightbox-next"
+                    id="lightboxNext"
+                    type="button"
+                    aria-label="Next image">
+                &#10095;
+            </button>
+
+        </div>
+
+        <!-- Gallery call to action -->
+        <section class="adoption-banner">
+
+            <div>
+
+                <p class="section-label">Make a difference</p>
+
+                <h2>Every Animal Deserves Love</h2>
+
+                <p>
+                    Learn more about animal adoption and
+                    responsible pet ownership.
+                </p>
+
+            </div>
+
+            <a href="adoption.html" class="btn btn-primary">
+                Explore Adoption
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Johannesburg SPCA</h2>
+                <p>Protecting animals. Promoting kindness.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="adoption.html">Adoption</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Johannesburg SPCA Website Project.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

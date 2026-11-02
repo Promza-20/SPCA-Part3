@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animal Adoption | Johannesburg SPCA</title>
+
+    <meta name="description" content="Explore animal profiles and learn about responsible pet adoption through our Johannesburg SPCA website project.">
+
+    <meta name="keywords" content="animal adoption Johannesburg, adopt a dog, adopt a cat, animal shelter">
+
+    <meta name="author" content="Promedi Ilunga">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true">J</span>
+            <span>Johannesburg <strong>SPCA</strong></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mainNavigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="mainNavigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="adoption.html" class="active" aria-current="page">Adoption</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Page heading -->
+        <section class="page-banner">
+
+            <p class="section-label">Find your new best friend</p>
+
+            <h1>Meet Your Future Companion</h1>
+
+            <p>
+                Every animal deserves a loving home.
+                Explore our sample animal profiles and discover
+                the joy of responsible adoption.
+            </p>
+
+        </section>
+
+        <!-- Adoption introduction -->
+        <section class="adoption-intro">
+
+            <h2>Love Comes in All Shapes and Sizes</h2>
+
+            <p>
+                Whether you are looking for a playful puppy,
+                a loving cat or another animal companion,
+                there is a special friend for everyone.
+            </p>
+
+            <p class="demo-notice">
+                Student project demonstration: these are sample
+                animal profiles, not verified available animals.
+            </p>
+
+        </section>
+
+        <!-- Search and filter -->
+        <section class="animal-search-section">
+
+            <div class="search-heading">
+                <h2>Find Your Companion</h2>
+                <p>Search by name or filter by animal type.</p>
+            </div>
+
+            <div class="animal-controls">
+
+                <input
+                    type="search"
+                    id="animalSearch"
+                    placeholder="Search animals by name..."
+                    aria-label="Search animals by name">
+
+                <select id="animalFilter" aria-label="Filter animals by type">
+
+                    <option value="all">All Animals</option>
+                    <option value="Dog">Dogs</option>
+                    <option value="Cat">Cats</option>
+                    <option value="Other">Other Animals</option>
+
+                </select>
+
+            </div>
+
+            <p id="animalCount" class="animal-count"
+               aria-live="polite">
+                Loading animals...
+            </p>
+
+            <!-- JavaScript will display animal cards here -->
+            <div class="animal-grid" id="animalGrid"></div>
+
+            <p id="noAnimals" class="no-animals" hidden>
+                No animals match your search. Please try another name
+                or category.
+            </p>
+
+        </section>
+
+        <!-- Adoption information -->
+        <section class="adoption-banner">
+
+            <div>
+
+                <p class="section-label">Ready to take the next step?</p>
+
+                <h2>Give an Animal a Second Chance</h2>
+
+                <p>
+                    Responsible adoption is a lifelong commitment.
+                    Make sure you are ready to provide a safe,
+                    loving and permanent home.
+                </p>
+
+            </div>
+
+            <a href="enquiry.html" class="btn btn-primary">
+                Adoption Enquiry
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Johannesburg SPCA</h2>
+                <p>Protecting animals. Promoting kindness.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Johannesburg SPCA Website Project.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

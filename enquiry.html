@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiries | Johannesburg SPCA</title>
+
+    <meta name="description" content="Contact our student animal welfare website project with adoption and animal welfare enquiries.">
+    <meta name="keywords" content="Johannesburg animal welfare enquiry, adoption enquiry, SPCA project contact">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true">J</span>
+            <span>Johannesburg <strong>SPCA</strong></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation menu"
+                aria-controls="mainNavigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="mainNavigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="adoption.html">Adoption</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html" class="active" aria-current="page">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <p class="section-label">We would love to hear from you</p>
+
+            <h1>Make an Enquiry</h1>
+
+            <p>
+                Have a question about animal adoption or animal welfare?
+                Send us an enquiry using the form below.
+            </p>
+        </section>
+
+        <section class="enquiry-section">
+
+            <div class="enquiry-information">
+
+                <p class="section-label">Get in touch</p>
+
+                <h2>How Can We Help You?</h2>
+
+                <p>
+                    Complete the form with your details and select
+                    the subject of your enquiry.
+                </p>
+
+                <div class="enquiry-note">
+                    <h3>Before submitting</h3>
+
+                    <p>
+                        Please provide accurate information and
+                        make sure your email address is correct.
+                    </p>
+                </div>
+
+                <p class="demo-notice">
+                    This is a student demonstration website.
+                    Submissions are not delivered to the actual SPCA.
+                </p>
+
+            </div>
+
+            <div class="enquiry-form-container">
+
+                <form id="enquiryForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            minlength="2"
+                            maxlength="80"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9+() -]{7,20}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiryType">Enquiry Type *</label>
+
+                        <select id="enquiryType"
+                                name="enquiryType"
+                                required>
+
+                            <option value="">Select an enquiry type</option>
+                            <option value="Adoption">Animal Adoption</option>
+                            <option value="Rescue">Animal Rescue</option>
+                            <option value="Volunteering">Volunteering</option>
+                            <option value="Donations">Donations</option>
+                            <option value="General">General Enquiry</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            minlength="10"
+                            maxlength="1000"
+                            placeholder="Write your enquiry here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit"
+                            id="submitEnquiry"
+                            class="btn btn-primary">
+                        Submit Enquiry
+                    </button>
+
+                    <p id="enquiryStatus"
+                       class="form-status"
+                       role="status"
+                       aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Johannesburg SPCA</h2>
+                <p>Protecting animals. Promoting kindness.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="adoption.html">Adoption</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Johannesburg SPCA Website Project.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
